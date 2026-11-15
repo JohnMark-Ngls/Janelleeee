@@ -28,7 +28,6 @@
 .music-copy p{max-width:300px;margin:0;color:#896575;font-size:12px;line-height:1.7}
 .music-signature{display:block;margin-top:12px;color:#906475;font:22px var(--script)}
 .music-player{overflow:hidden;border-radius:6px;background:#532c3d}
-.music-player iframe{display:block;width:100%;height:220px;border:0}
-@media(max-width:800px){.music-card{margin:-20px 0 50px;grid-template-columns:1fr;gap:18px;padding:25px}.music-player iframe{height:220px}}
-@media(max-width:560px){.music-player iframe{height:200px}}
+.music-player iframe{display:block;width:100%;height:152px;border:0}
+@media(max-width:800px){.music-card{margin:-20px 0 50px;grid-template-columns:1fr;gap:18px;padding:25px}}
 .music-link{display:inline-block;margin-top:10px;color:#a44767;font-size:11px;font-weight:700}.music-link:hover{text-decoration:underline}
