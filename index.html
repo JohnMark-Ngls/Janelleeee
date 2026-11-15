@@ -1,46 +1,33 @@
 <!DOCTYPE html>
-<html lang="fil">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>para sa baby ko</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        if (localStorage.getItem("janelle.auth") === "yes") { location.replace("love.html"); }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For Janelle | A little place for us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>if (localStorage.getItem('janelle.auth') === 'yes') location.replace('love.html');</script>
 </head>
-<body>
-<canvas id="fx" aria-hidden="true"></canvas>
-
-<main class="login">
-    <div class="login-inner" id="loginInner">
-        <h1>Janelle</h1>
-        <p class="tagline">sinulat ko to, type pala:))</p>
-
-        <form id="loginForm" novalidate>
-            <div class="field">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required>
-            </div>
-
-            <div class="field">
-                <label for="password">Password</label>
-                <input id="password" name="password" type="password" autocomplete="current-password" required>
-                <button type="button" class="toggle-pass" id="togglePass" aria-pressed="false">Ipakita</button>
-            </div>
-
-            <p class="hint">Hint: aba hulaan mo boi.</p>
-            <p class="form-error" id="error" role="alert"></p>
-
-            <button type="submit" class="btn btn-primary">Pumasok</button>
-        </form>
+<body class="login-page">
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <main class="login-wrap">
+    <a class="brand login-brand" href="index.html"><span class="brand-mark">♡</span><span>little love notes<small>A PLACE FOR US</small></span></a>
+    <div class="login-card" id="loginInner">
+      <div class="login-illustration" aria-hidden="true"><span class="sparkle sparkle-one">✦</span><span class="envelope">♡</span><span class="sparkle sparkle-two">✧</span></div>
+      <span class="eyebrow">A LITTLE SOMETHING FOR YOU</span>
+      <h1>Hi, <em>Janelle.</em></h1>
+      <p class="login-intro">A little corner of the internet, made with a whole lot of love.</p>
+      <form id="loginForm" novalidate>
+        <div class="field"><label for="email">Username</label><input id="email" name="email" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Your name" required></div>
+        <div class="field"><label for="password">Password</label><div class="password-wrap"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="The secret word" required><button type="button" class="toggle-pass" id="togglePass" aria-pressed="false">Show</button></div></div>
+        <p class="form-error" id="error" role="alert"></p>
+        <button type="submit" class="btn btn-primary login-submit">Open our little world <span>↗</span></button>
+      </form>
+      <p class="login-foot">Made with love, just for you ♡</p>
     </div>
-</main>
-
-<script src="js/effects.js"></script>
-<script src="js/login.js"></script>
+  </main>
+  <script src="effects.js"></script><script src="login.js"></script>
 </body>
 </html>

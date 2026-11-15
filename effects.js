@@ -297,6 +297,7 @@
      * play("hearts" | "fireworks" | "petals" | "stars" | "all", milliseconds)
      */
     function play(name, ms) {
+        if (reduce) return;
         const names = Array.isArray(name) ? name : name === "all" ? ["hearts", "fireworks", "petals", "stars"] : [name];
         spawners = [];
         names.forEach((n) => (EFFECTS[n] || []).forEach((e) => spawners.push({ every: e.every, fn: e.fn, acc: e.every })));
