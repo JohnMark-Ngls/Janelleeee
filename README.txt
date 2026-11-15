@@ -14,6 +14,7 @@ HOW TO USE
 - Save a note to revisit, edit, favorite, search, or delete it later. Notes are stored in this browser on this device.
 - Press Escape or click the reveal to close it.
 - Use the arrow on the reminder card to see another message.
+- Press play on the YouTube player to listen to Paramore while using the page. An internet connection is required.
 
 CHANGE THE LOGIN
 Edit LOGIN_EMAIL and LOGIN_PASSWORD at the top of login.js. This is a playful client-side gate, not secure authentication.
