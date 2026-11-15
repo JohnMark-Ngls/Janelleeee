@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>For My Baby</title>
+    <script>
+        if (localStorage.getItem("janelle.auth") !== "yes") { location.replace("index.html"); }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<div class="reveal" id="reveal" role="dialog" aria-live="polite" aria-label="A message for you, baby hehe">
+    <p class="reveal-text" id="revealText"></p>
+    <p class="reveal-hint">You can exit anytime.</p>
+</div>
+
+<div class="shell">
+    <header class="topbar">
+        <span class="name">Janelle</span>
+        <button class="btn btn-ghost btn-small" id="logout" type="button">Log Out</button>
+    </header>
+
+    <div class="layout">
+        <section class="composer" aria-labelledby="composeTitle">
+            <h1 id="composeTitle">What would you like to say?</h1>
+            <p class="sub">Choose an animation, baby.</p>
+
+            <label for="message" class="sr-only" style="position:absolute;left:-9999px">Message</label>
+            <textarea id="message" maxlength="280" placeholder="You are my favorite reason to smile..."></textarea>
+            <p class="counter" id="counter" aria-live="polite">0 / 280</p>
+
+            <fieldset class="effects">
+                <legend>Animation</legend>
+                <div class="pills">
+                    <label class="pill"><input type="radio" name="effect" value="hearts" checked><span>Hearts</span></label>
+                    <label class="pill"><input type="radio" name="effect" value="fireworks"><span>Fireworks</span></label>
+                    <label class="pill"><input type="radio" name="effect" value="petals"><span>Rose Petals</span></label>
+                    <label class="pill"><input type="radio" name="effect" value="stars"><span>Stars</span></label>
+                    <label class="pill"><input type="radio" name="effect" value="all"><span>All Effects</span></label>
+                </div>
+            </fieldset>
+
+            <div class="actions">
+                <button class="btn btn-primary" id="play" type="button">Let's Do This!</button>
+                <button class="btn btn-ghost" id="save" type="button">Save</button>
+            </div>
+            <p class="status" id="status" role="status"></p>
+        </section>
+
+        <aside class="letters" aria-labelledby="lettersTitle">
+            <h2 id="lettersTitle">Read All Messages</h2>
+            <p class="sub">Just click again whenever you want to read them.</p>
+            <ul class="letter-list" id="letterList"></ul>
+        </aside>
+    </div>
+</div>
+
+<script src="js/effects.js"></script>
+<script src="js/love.js"></script>
+</body>
+</html>
