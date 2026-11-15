@@ -20,3 +20,15 @@
 .empty strong{color:#795161}.footer-script,footer,footer a,.login-foot{color:#906475}
 .pill input:checked+span{color:#97415f}
 .toggle-pass{color:#92546a}
+
+/* A song to keep playing while the notes are open. */
+.music-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(356px,1fr);gap:30px;align-items:center;margin:-35px 0 70px;padding:28px 35px;background:#fffdfb;border:1px solid #f1e3e3;border-radius:8px;box-shadow:0 12px 30px #b9878d0a}
+.music-copy h2{margin:12px 0 8px;font:400 30px/1.1 var(--serif)}
+.music-copy h2 em{color:#bd597a;font-weight:400}
+.music-copy p{max-width:300px;margin:0;color:#896575;font-size:12px;line-height:1.7}
+.music-signature{display:block;margin-top:12px;color:#906475;font:22px var(--script)}
+.music-player{overflow:hidden;border-radius:6px;background:#532c3d}
+.music-player iframe{display:block;width:100%;height:220px;border:0}
+@media(max-width:800px){.music-card{margin:-20px 0 50px;grid-template-columns:1fr;gap:18px;padding:25px}.music-player iframe{height:220px}}
+@media(max-width:560px){.music-player iframe{height:200px}}
+.music-link{display:inline-block;margin-top:10px;color:#a44767;font-size:11px;font-weight:700}.music-link:hover{text-decoration:underline}
