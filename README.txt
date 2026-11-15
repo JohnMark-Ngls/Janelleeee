@@ -1,29 +1,25 @@
-PARA KAY JANELLE
-================
+FOR JANELLE
+===========
 
-PAANO BUKSAN
-1. I-extract ang zip.
-2. I-double-click ang "index.html" (bubukas sa browser). Kailangan ng internet para sa magagandang font.
+GETTING STARTED
+Open index.html in a browser. An internet connection is needed for the optional Google Fonts.
 
-LOGIN (default)
-  email:    janelle
-  password: iloveyou
+DEFAULT LOGIN
+  Username: janelle
+  Password: iloveyou
 
-PAANO GAMITIN
-- Isulat ang mensahe sa kahon.
-- Pumili ng animation: Mga puso, Paputok, Rosas, Bituin, o Lahat.
-- Pindutin ang "Iparamdam ang pagmamahal" para lumabas ang animation at ang mensahe.
-- Pindutin ang "I-save sa listahan" para maitabi ang sulat. Pwede itong "Ulitin" o "Burahin" sa kanan.
-- Pindutin kahit saan (o Esc) para isara ang animation.
+HOW TO USE
+- Write a message or choose "Surprise me" for inspiration.
+- Pick an animation and select "Bring it to life" to reveal the message.
+- Save a note to revisit, edit, favorite, search, or delete it later. Notes are stored in this browser on this device.
+- Press Escape or click the reveal to close it.
+- Use the arrow on the reminder card to see another message.
 
-PAANO PALITAN ANG EMAIL / PASSWORD
-Buksan ang js/login.js at palitan ang LOGIN_EMAIL at LOGIN_PASSWORD sa taas.
-(Paalala: pang-regalo lang ito, hindi ito secure na login dahil nasa browser lang ang pag-check.)
+CHANGE THE LOGIN
+Edit LOGIN_EMAIL and LOGIN_PASSWORD at the top of login.js. This is a playful client-side gate, not secure authentication.
 
-MGA FILE
-index.html    - login page
-love.html     - pahina kung saan magsusulat at magpapa-animation
-css/style.css - itsura
-js/effects.js - mga animation (puso, paputok, rosas, bituin)
-js/love.js    - pag-save ng mga sulat at pagpapakita ng mensahe
-js/login.js   - login
+FILES
+index.html and login.js - login page
+love.html and love.js - note composer and saved notes
+style.css - page styles
+effects.js - canvas animations
