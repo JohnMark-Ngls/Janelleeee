@@ -36,7 +36,7 @@ function setStatus(text) {
     if (text) statusTimer = setTimeout(() => { statusEl.textContent = ""; }, 4000);
 }
 function selectedEffect() { return document.querySelector('input[name="effect"]:checked').value; }
-function updateCounter() { counterEl.textContent = `${messageEl.value.length} / 280`; }
+function updateCounter() { counterEl.textContent = `${messageEl.value.length} / 500`; }
 function button(label, className, action) {
     const el = document.createElement("button");
     el.type = "button"; el.className = className; el.textContent = label; el.addEventListener("click", action);
